@@ -1,0 +1,48 @@
+@media (max-width: 576px) {
+    .team-img {
+        width: 250px;
+        height: 260px;
+        transition: transform 0.3s ease;
+    }
+
+    .team-img:hover {
+        transform: scale(1.1); /* Slight enlargement on hover */
+    }
+     /* Adjust text size for mobile view */
+     .team-section h5 {
+        font-size: 25px; /* Adjust to desired size */
+    }
+
+    .team-section .small {
+        font-size: 13px; /* Adjust to desired size */
+    }
+}
+@media (max-width: 767px) {
+    .about-text ul {
+        padding-left: 20px; /* Add padding to the left for neat alignment */
+        margin-bottom: 15px; /* Space between lists */
+    }
+    
+    .about-text ul li {
+        line-height: 1.6; /* Adjust line height for readability */
+        margin-bottom: 10px; /* Space between list items */
+        font-size: 16px; /* Slightly adjust font size for mobile */
+    }
+    
+    .about-text h3,
+    .about-text h4 {
+        text-align: center; /* Center-align headers on mobile */
+    }
+    
+    .about-img img {
+        max-width: 100%;
+        height: auto; /* Ensure the image scales properly on mobile */
+        margin-bottom: 20px; /* Space below the image */
+    }
+    
+    .btn-bar {
+        text-align: center; /* Center-align the button */
+        margin-top: 20px; /* Space above the button */
+    }
+}
+

@@ -1,0 +1,1486 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+<div>
+    <!-- Navigation -->
+    <header class="site-header header-style-11 mobile-sider-drawer-menu">
+        <div class="header-style-11-content">
+            <div class="header-middle-wraper">
+                <div class="container">
+                    <div class="header-middle d-flex justify-content-between align-items-center">
+                        <div class="logo-header pt-3 pb-3">
+                            <div class="logo-header-inner logo-header-one">
+                                <a href="{% url 'index' %}">
+                                    <img src="{% static 'images/extra/logo.png' %}" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="header-info-wraper">
+                            <div class="header-info">
+                                <ul>
+                                    <li>
+                                        <div class="wt-icon-box-wraper left">
+                                            <div class="wt-icon-box-xs site-bg-primary radius">
+                                                <span class="icon-cell site-text-white"><i
+                                                        class="fa fa-envelope"></i></span>
+                                            </div>
+                                            <div class="icon-content">
+                                                <p>Send Us Email</p>
+                                                <h4 class="wt-tilte">CONTACT@sunraysol.com</h4>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="wt-icon-box-wraper left">
+                                            <div class="wt-icon-box-xs site-bg-primary radius">
+                                                <span class="icon-cell site-text-white"><i
+                                                        class="fa fa-phone"></i></span>
+                                            </div>
+                                            <div class="icon-content">
+                                                <p>Get Quick Support</p>
+                                                <h4 class="wt-tilte">Tel: 0824 2215291</h4>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="sticky-header main-bar-wraper navbar-expand-lg">
+
+                    <div class="main-bar header-bottom">
+                        <div class="container-block clearfix">
+
+                            <div class="navigation-bar">
+                                <!-- NAV Toggle Button -->
+                                <button id="mobile-side-drawer" data-target=".header-nav" data-toggle="collapse"
+                                    type="button" class="navbar-toggler collapsed">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar icon-bar-first"></span>
+                                    <span class="icon-bar icon-bar-two"></span>
+                                    <span class="icon-bar icon-bar-three"></span>
+                                </button>
+
+                                <!-- MAIN Vav -->
+                                <div
+                                    class="nav-animation header-nav navbar-collapse collapse d-flex justify-content-between">
+
+                                    <ul class="nav navbar-nav">
+                                        <li><a href="{% url 'index' %}">Home</a>
+
+                                        </li>
+
+                                        <li><a href="{% url 'about' %}">About</a>
+
+                                        </li>
+                                        <li><a href="{% url 'services' %}">gallery</a>
+
+                                        </li>
+                                        <li><a href="{% url 'project_list' %}">Project</a></li>
+
+                                        <li><a href="{% url 'contacts' %}">Contact us</a></li>
+                                    </ul>
+
+                                </div>
+
+                                <!-- Header Right Section-->
+                                <div class="extra-nav header-1-nav">
+                                    <!-- <div class="extra-cell one">
+                                            <div class="header-search">
+                                                <a href="#search-two" class="header-search-icon"><i class="fa fa-search"></i></a>
+                                            </div>    
+                                        </div> -->
+                                    <div class="extra-cell two">
+                                        <div class="extra-cell one">
+                                            <div class="header-search">
+                                                <a href="#search-two" class="header-search-icon"><i
+                                                        class="fa fa-search"></i></a>
+                                            </div>
+                                        </div>
+
+                                        <div class="cart-dropdown-item-wraper clearfix">
+                                            <div class="nav-cart-content">
+
+                                                <div class="nav-cart-items p-a15">
+                                                    <div class="nav-cart-item clearfix">
+                                                        <div class="nav-cart-item-image">
+                                                            <a href="#"><img
+                                                                    src="{% static 'images/home-11/cart/pic-1.jpg' %}"
+                                                                    alt="p-1"></a>
+                                                        </div>
+                                                        <div class="nav-cart-item-desc">
+                                                            <span class="nav-cart-item-price"><strong>2</strong> x
+                                                                $19.99</span>
+                                                            <a href="#">Heavy helmet</a>
+                                                            <a href="#" class="nav-cart-item-quantity radius-sm">x</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="nav-cart-item clearfix">
+                                                        <div class="nav-cart-item-image">
+                                                            <a href="#"><img
+                                                                    src="{% static 'images/home-11/cart/pic-1.jpg' %}"
+                                                                    alt="p-2"></a>
+                                                        </div>
+                                                        <div class="nav-cart-item-desc">
+                                                            <span class="nav-cart-item-price"><strong>1</strong> x
+                                                                $24.99</span>
+                                                            <a href="#">Power drill</a>
+                                                            <a href="#" class="nav-cart-item-quantity radius-sm">x</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="nav-cart-title p-tb10 p-lr15 d-flex">
+                                                    <h4 class="m-a0">Subtotal:</h4>
+                                                    <h5 class="m-a0">$67.97</h5>
+                                                </div>
+                                                <div class="nav-cart-action p-a15 d-flex justify-content-start">
+                                                    <button class="site-button" type="button">View Cart</button>
+                                                    <button class="site-button-secondry" type="button">Checkout
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- SITE Search -->
+                    <div id="search-two">
+                        <span class="close"></span>
+                        <form role="search-two" id="searchform" action="/search" method="get" class="radius-xl">
+                            <div class="input-group">
+                                <input class="form-control" value="" name="q" type="search"
+                                    placeholder="Type to search">
+                                <span class="input-group-append"><button type="button" class="search-btn"><i
+                                            class="fa fa-paper-plane"></i></button></span>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+</div>
+
+
+
+</div>
+<!-- HEADER END -->
+
+
+
+
+
+
+
+
+
+<!-- CONTENT START -->
+<div class="page-content">
+
+    <!-- SLIDER START -->
+
+
+
+    <div class="slider-outer2 bg-white" style="width: 100%;">
+
+        <div class="mid-slider">
+            <div id="welcome_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="typewriter-effect"
+                data-source="gallery">
+                <div id="welcome_two" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.4.1">
+                    <ul>
+
+                        <!-- SLIDE 1 -->
+                        <li data-index="rs-901" data-transition="slidingoverlayhorizontal" data-slotamount="default"
+                            data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default"
+                            data-easeout="default" data-masterspeed="default"
+                            data-thumb="{% static 'images/extra/bg.jpg' %}" data-rotate="0" data-saveperformance="off"
+                            data-title="Slide" data-param1="" data-description="">
+                            <!-- MAIN IMAGE -->
+                            <img src="{% static 'images/extra/bg.jpg' %}" center="" bottom"="" data-bgfit="cover"
+                                data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina="">
+                            <!-- LAYERS -->
+                            <!-- LAYER NR. 2 [ Small Title ] -->
+                            <div class="tp-caption   tp-resizeme site-text-primary" id="slide-901-layer-2"
+                                data-x="['left','left','left','left']" data-hoffset="['30','120','34','30']"
+                                data-y="['top','middle','middle','middle']" data-voffset="['180','-80','-80','-60']"
+                                data-fontsize="['24','24','24','20']" data-lineheight="['24','24','24','20']"
+                                data-width="['700','700','96%','96%']" data-height="['none','none','none','none']"
+                                data-whitespace="['normal','normal','normal','normal']" data-type="text"
+                                data-responsive_offset="on" data-frames="[
+                                    {&quot;from&quot;:&quot;y:100px(R);opacity:0;&quot;,&quot;speed&quot;:2000,&quot;to&quot;:&quot;o:1;&quot;,&quot;delay&quot;:500,&quot;ease&quot;:&quot;Power4.easeOut&quot;},
+                                    {&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1000,&quot;to&quot;:&quot;y:-50px;opacity:0;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}
+                                    ]" data-textalign="['left','left','left','left']" data-paddingtop="[0,0,0,0]"
+                                data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+                                data-paddingleft="[0,0,0,0]" style="z-index: 13; 
+                                    white-space: normal; 
+                                    font-weight: 700;
+                                    font-family: 'Exo', sans-serif;">We Make Sure</div>
+
+                            <!-- LAYER NR. 3 [ Large Title ] -->
+                            <div class="tp-caption   tp-resizeme" id="slide-901-layer-3"
+                                data-x="['left','left','left','left']" data-hoffset="['30','120','30','30']"
+                                data-y="['top','middle','middle','middle']" data-voffset="['230','20','0','0']"
+                                data-fontsize="['56','56','46','30']" data-lineheight="['66','66','48','38']"
+                                data-width="['600','700','96%','96%']" data-height="['none','none','none','none']"
+                                data-whitespace="['normal','normal','normal','normal']" data-type="text"
+                                data-responsive_offset="on" data-frames="[
+                                    {&quot;from&quot;:&quot;y:100px(R);opacity:0;&quot;,&quot;speed&quot;:2000,&quot;to&quot;:&quot;o:1;&quot;,&quot;delay&quot;:1000,&quot;ease&quot;:&quot;Power4.easeOut&quot;},
+                                    {&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1000,&quot;to&quot;:&quot;y:-50px;opacity:0;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}
+                                    ]" data-textalign="['left','left','left','left']" data-paddingtop="[5,5,5,5]"
+                                data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+                                data-paddingleft="[0,0,0,0]" style="z-index: 13; 
+                                    white-space: normal; 
+                                    font-weight: 900;
+                                    color:#fff;
+                                    border-width:0px; font-family: 'Exo', sans-serif; text-transform:uppercase;">Build
+                                Everything You Needs</div>
+
+                            <!-- LAYER NR. 4 [ for paragraph] -->
+                            <div class="tp-caption  tp-resizeme" id="slide-901-layer-4"
+                                data-x="['left','left','left','left']" data-hoffset="['30','120','30','30']"
+                                data-y="['middle','middle','middle','middle']" data-voffset="['50','130','100','80']"
+                                data-fontsize="['16','16','20','14']" data-lineheight="['30','30','30','22']"
+                                data-width="['600','600','90%','90%']" data-height="['none','none','none','none']"
+                                data-whitespace="['normal','normal','normal','normal']" data-type="text"
+                                data-responsive_offset="on" data-frames="[
+                                    {&quot;from&quot;:&quot;y:100px(R);opacity:0;&quot;,&quot;speed&quot;:2000,&quot;to&quot;:&quot;o:1;&quot;,&quot;delay&quot;:1500,&quot;ease&quot;:&quot;Power4.easeOut&quot;},
+                                    {&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1000,&quot;to&quot;:&quot;y:-50px;opacity:0;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}
+                                    ]" data-textalign="['left','left','left','left']" data-paddingtop="[0,0,0,0]"
+                                data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+                                data-paddingleft="[0,0,0,0]" style="z-index: 13; 
+                                    font-weight: 500; 
+                                    color:#fff;
+                                    border-width:0px;font-family: 'Exo', sans-serif;">
+                            </div>
+
+                            <!-- LAYER NR. 5 [ for see all service botton ] -->
+                            <div class="tp-caption tp-resizeme" id="slide-901-layer-5"
+                                data-x="['left','left','left','left']" data-hoffset="['30','120','30','30']"
+                                data-y="['middle','middle','middle','middle']" data-voffset="['150','230','180','180']"
+                                data-lineheight="['none','none','none','none']" data-width="['200','200','200','200']"
+                                data-height="['none','none','none','none']"
+                                data-whitespace="['normal','normal','normal','normal']" data-type="text"
+                                data-responsive_offset="on" data-frames="[ 
+                                    {&quot;from&quot;:&quot;y:100px(R);opacity:0;&quot;,&quot;speed&quot;:2000,&quot;to&quot;:&quot;o:1;&quot;,&quot;delay&quot;:2000,&quot;ease&quot;:&quot;Power4.easeOut&quot;},
+                                    {&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1000,&quot;to&quot;:&quot;y:-50px;opacity:0;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}
+                                    ]" data-textalign="['left','left','left','left']" data-paddingtop="[0,0,0,0]"
+                                data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+                                data-paddingleft="[0,0,0,0]" style="z-index:13; text-transform:uppercase;">
+                                <a href="#" class="site-button btn-hover-animation"><i class="flaticon-right"></i>More
+                                    About</a>
+                            </div>
+
+
+                        </li>
+
+
+                        <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- SLIDER END -->
+
+    <!-- ABOUT ONE SECTION START -->
+    <div class="container-fluid section-full p-t90 p-b50 bg-no-repeat bg-bottom-left bg-white"
+        style="background-image:url({% static 'images/background/building-bg.png' %});">
+        <div class="about-section-11">
+            <div class="container">
+                <div class="section-content">
+                    <div class="row justify-content-center d-flex">
+
+                        <div class="col-lg-6 col-md-12 m-b30">
+                            <div class="about-section-11-right">
+                                <!-- TITLE START-->
+                                <div class="section-head left wt-small-separator-outer">
+                                    <div class="wt-small-separator site-text-primary">
+                                        <div>About Us</div>
+                                    </div>
+                                    <h2>YOUR
+                                        PREFERRED SOLAR SOULTIONS PROVIDER</h2>
+                                </div>
+                                <!-- TITLE END-->
+
+                                <div class="about-one">
+                                    <p>Sun-Ray Solar was established in the year 1996 manufacturing Solar Water Heaters
+                                        under the brand name “Sun-Ray”. Later in 2014,
+                                        since the power situation in the country was grim, we launched Solar
+                                        photovoltaic Systems
+                                    </p>
+                                </div>
+
+                                <ul class="description-list p-b20">
+                                    <li><i class="fa fa-angle-right"></i>Seasoned Experts: Decades' experience, skilled
+                                        team</li>
+                                    <li><i class="fa fa-angle-right"></i>Renewable Leaders: Industry veterans, top
+                                        talent</li>
+                                    <li><i class="fa fa-angle-right"></i>Affordable Excellence: Competitive prices,
+                                        superior quality</li>
+                                </ul>
+
+                                <a href="#" class="site-button site-btn-effect">More About</a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-12 m-b30 about-max-12-position">
+                            <div class="about-max-12">
+                                <span class="ipad-pencil"><img
+                                        src="{% static 'images/home-11/background/ipad-pencil.png' %}"
+                                        class="ipad-pencil-jump"></span>
+                                <div class="ser-ipad-warp">
+                                    <span class="ser-ipad-cam"></span>
+                                    <div class="ser-ipad-pic"
+                                        style="background-image:url({% static 'images/new datas/home/main.jpeg' %});border-radius:15px;">
+
+                                        <a href="https://www.youtube.com/watch?v=c1XNqw2gSbU"
+                                            class="mfp-video play-now-video">
+                                            <i class="icon fa fa-play"></i>
+                                            <span class="ripple"></span>
+                                        </a>
+                                    </div>
+                                    <span class="ser-ipad-btn"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ABOUT ONE SECTION END -->
+
+
+
+    <section style="background-image: url('static/images/background/bg-map-white.png');">
+        <div class="container">
+
+
+            <div class="row mbr-justify-content-center">
+
+                <div class="col-lg-6 mbr-col-md-10">
+                    <div class="wrap">
+                        <div class="ico-wrap">
+                            <span style="color: orangered;" class="mbr-iconfont fa-volume-up fa"></span>
+                        </div>
+                        <div class="text-wrap vcenter">
+                            <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5" style="color: orangered;">
+                                TRUSTED PARTNER</span></h2>
+                            <p class="mbr-fonts-style text1 mbr-text display-6">We build long tearm relationship with
+                                trust and transparency.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mbr-col-md-10">
+                    <div class="wrap">
+                        <div class="ico-wrap">
+                            <span style="color: orangered;" class="mbr-iconfont fa-calendar fa"></span>
+                        </div>
+                        <div class="text-wrap vcenter">
+                            <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5" style="color: orangered;">
+                                CUSTOMER OBSESSION
+                            </h2>
+                            <p class="mbr-fonts-style text1 mbr-text display-6">All our actions are directed to ensure
+                                the ultimate customer delight</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mbr-col-md-10">
+                    <div class="wrap">
+                        <div class="ico-wrap">
+                            <span style="color: orangered;" class="mbr-iconfont fa-trophy fa"></span>
+                        </div>
+                        <div class="text-wrap vcenter">
+                            <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5" style="color: orangered;">
+                                DEDICATED TEAM</h2>
+                            <p class="mbr-fonts-style text1 mbr-text display-6">We hire the best,value their
+                                contribution and growth,and nurture them to create future leader</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mbr-col-md-10">
+                    <div class="wrap">
+                        <div class="ico-wrap">
+                            <span style="color: orangered;" class="mbr-iconfont fa fa-industry fa"></span>
+                        </div>
+                        <div class="text-wrap vcenter">
+                            <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5" style="color: orangered;">
+                                INNOVATIVE APPROACH</h2>
+                            <p class="mbr-fonts-style text1 mbr-text display-6">We believe in keeping things simple and
+                                innovative</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mbr-col-md-10">
+                    <div class="wrap">
+                        <div class="ico-wrap">
+                            <span style="color: orangered;" class="mbr-iconfont fa-globe fa"></span>
+                        </div>
+                        <div class="text-wrap vcenter">
+                            <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5" style="color: orangered;">
+                                A PROMISE
+                            </h2>
+                            <p class="mbr-fonts-style text1 mbr-text display-6">We embrace full accountability for our
+                                actions and decisions</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mbr-col-md-10">
+                    <div class="wrap">
+                        <div class="ico-wrap">
+                            <span style="color: orangered;" class="mbr-iconfont fa fa-heartbeat fa"></span>
+                        </div>
+                        <div class="text-wrap vcenter">
+                            <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5" style="color: orangered;">
+                                INTEGRITY</h2>
+                            <p class="mbr-fonts-style text1 mbr-text display-6">We believe in setting new benchmarjjs
+                                and delivering the highest standards of perfomance</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+
+
+    <!-- SERVICES SECTION START -->
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- SERVICES SECTION END -->
+
+</div>
+</div>
+
+<!-- CLIENT LOGO  SECTION End -->
+
+
+
+<div style="background-color:#ffffff" class="section-full bg-gray  p-b50">
+    <div class="container">
+        <h2 class="text-center pb-5 " style="color:#939597">Our Services</h2>
+        <p class="text-center">
+            Without our key strength of cutting-edge technology, strategic tie-up with global leaders
+            in PV technology, and an experienced system integration team in place, we today have
+            the capability to execute and manage KW Solar PV plants to MW-sized farm/projects.
+            We have revolutionized the way energy is delivered by giving customers a cleaner and
+            more affordable alternative to their monthly utility bills.
+
+        </p>
+    </div>
+</div>
+
+
+<div class="container-fluid">
+    <div class="container mt-4">
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-9"> <!-- Set number of columns based on screen size -->
+
+            <div class="col text-center">
+                <div class="thumbnail">
+                    <img src="{% static 'images/icons8/a1.png' %}" alt="Element1" />
+                    <div class="caption">Viability Studies</div>
+                </div>
+            </div>
+
+            <div class="col text-center">
+                <div class="thumbnail">
+                    <img src="{% static 'images/icons8/a2.png' %}" alt="Element2" />
+                    <div class="caption">Construction</div>
+                </div>
+            </div>
+            <div class="col text-center">
+                <div class="thumbnail">
+                    <img src="{% static 'images/icons8/a3.png' %}" alt="Element3" />
+                    <div class="caption">Design</div>
+                </div>
+            </div>
+            <div class="col text-center ">
+                <div class="thumbnail">
+                    <img src="{% static 'images/icons8/a4.png' %}" alt="Element4" />
+                    <div class="caption">Equipment</div>
+                </div>
+            </div>
+
+
+            <div class="col text-center ">
+                <div class="thumbnail">
+                    <img src="{% static 'images/icons8/a5.png' %}" alt="Element4" />
+                    <div class="caption">Installation</div>
+                </div>
+            </div>
+            <div class="col text-center ">
+                <div class="thumbnail">
+                    <img src="{% static 'images/icons8/a6.png' %}" alt="Element4" />
+                    <div class="caption">Engineering</div>
+                </div>
+            </div>
+
+            <div class="col text-center">
+                <div class="thumbnail">
+                    <img src="{% static 'images/icons8/a7.png' %}" alt="Element4" />
+                    <div class="caption">Permiting</div>
+                </div>
+            </div>
+            <div class="col text-center ">
+                <div class="thumbnail">
+                    <img src="{% static 'images/icons8/a8.png' %}" alt="Element4" />
+                    <div class="caption">Site work</div>
+                </div>
+            </div>
+            <div class="col text-center ">
+                <div class="thumbnail">
+                    <img src="{% static 'images/icons8/a8.png' %}" alt="Element4" />
+                    <div class="caption">Maintainance</div>
+                </div>
+            </div>
+
+
+            <!-- Repeat the following code block for each column -->
+        </div>
+    </div>
+</div>
+
+
+<!-- 
+<div class="container-fluid">
+
+    <section class="pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <h3 class="mb-3">Our Recent Projects</h3>
+                </div>
+                <div class="col-6 text-right">
+                    <a style="background-color: rgb(250, 105, 52);color:white" class="btn  mb-3 mr-1"
+                        href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                        <i class="fa fa-arrow-left"></i>
+                    </a>
+                    <a style="background-color: rgb(250, 105, 52);color:rgb(255, 255, 255)" class="btn  mb-3 "
+                        href="#carouselExampleIndicators2" role="button" data-slide="next">
+                        <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="col-12">
+                    <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280"
+                                                src="{% static 'images/new datas/recent_projects/karnataka/John Sports & Clutural Academy - 27.20 Kw.jpg' %}">
+                                            <div class="card-body">
+                                                <h4 class="card-title">KARNATA</h4>
+                                                <p class="card-text">John Sports & Cultural Academy</p>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280"
+                                                src="{% static 'images/new datas/recent_projects/karnataka/Classique Signature, Kadri 17.5 kw (4).JPG' %}">
+                                            <div class="card-body">
+                                                <h4 class="card-title">KARNATAKA</h4>
+                                                <p class="card-text">Classic Signature , kadri 17.5 kw</p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280"
+                                                src="{% static 'images/new datas/recent_projects/22MW kayamkulam site (4).jpeg' %}">
+                                            <div class="card-body">
+                                                <h4 class="card-title">KERALA</h4>
+                                                <p class="card-text">kayamkumal site</p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280"
+                                                src="{% static 'images/new datas/recent_projects/Gafdoor, Karala 40 kw (34).JPG' %}">
+                                            <div class="card-body">
+                                                <h4 class="card-title">KERALA</h4>
+                                                <p class="card-text">Gafdoor , kerala 40kw</p>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280"
+                                                src="{% static 'images/new datas/recent_projects/Faizal, Karala 23 kw (2).JPG' %}">
+                                            <div class="card-body">
+                                                <h4 class="card-title">KERALA</h4>
+                                                <p class="card-text">faizal kerala 23kw </p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280"
+                                                src="{% static 'images/new datas/recent_projects/22MW kayamkulam site.jpeg' %}">
+                                            <div class="card-body">
+                                                <h4 class="card-title">KERALA</h4>
+                                                <p class="card-text">22mw kayamkulam site</p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280"
+                                                src="{% static 'images/new datas/recent_projects/karnataka/Agnes Convent - 20 Kw.jpg' %}">
+                                            <div class="card-body">
+                                                <h4 class="card-title">KARNATAKA</h4>
+                                                <p class="card-text">Agnes Convent-20w</p>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280"
+                                                src="{% static 'images/new datas/recent_projects/karnataka/Shri Krishna Vilas, Urwa 23kw (12).JPG' %}">
+                                            <div class="card-body">
+                                                <h4 class="card-title">KARNATA</h4>
+                                                <p class="card-text">Sri Krishna Vilas Urwa 23kw</p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280"
+                                                src="{% static 'images/new datas/recent_projects/karnataka/Downtown Apartment (7).JPG' %}">
+                                            <div class="card-body">
+                                                <h4 class="card-title">KARNATAKA</h4>
+                                                <p class="card-text">Downtown Apartment</p>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div> -->
+
+<!-- INTRO SECTION START -->
+<div class="section-full p-t90 p-b50 bg-gray">
+
+    <div class="container">
+
+
+        <!-- TITLE START-->
+        <div class="section-head center  wt-small-separator-outer">
+            <div class="wt-small-separator site-text-primary">
+                <div>What We Do!</div>
+            </div>
+            <h2 class="wt-title">Let's build your dream together</h2>
+        </div>
+        <!-- TITLE END-->
+
+
+
+        <div class="s-section">
+            <div class="row">
+                <!-- COLUMNS 1 -->
+                <div class="col-lg-3 col-md-6  col-sm-6 m-b30">
+                    <div style="border-radius: 10px;" class="service-icon-box-three shadow-bx text-center">
+
+                        <div class="wt-icon-box-wraper circle-bg  scale-up-center">
+                            <div class="icon-lg inline-icon">
+                                <span class="icon-cell"><img style="width: 90px;height:90px;"
+                                        src="{% static 'images/engineering/engineering.png' %}"></span>
+                            </div>
+                        </div>
+
+                        <div class="service-icon-box-title">
+                            <h4 class="wt-title"><a href="service-detail.html">Engineering</a></h4>
+                        </div>
+
+                        <div class="service-icon-box-content">
+                            <p>Precision engineering for customized solar solutions that maximize energy efficiency and reliability.</p>
+                            <a href="service-detail.html" class="site-button-link site-text-primary">Read More</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- COLUMNS 2 -->
+                <div class="col-lg-3 col-md-6  col-sm-6 m-b30">
+                    <div style="border-radius: 10px;" class="service-icon-box-three shadow-bx text-center">
+
+                        <div class="wt-icon-box-wraper circle-bg  scale-up-center">
+                            <div class="icon-lg inline-icon">
+                                <span class="icon-cell"><img style="width: 90px;height:90px;"
+                                        src="{% static 'images/engineering/settings.png' %}"></span>
+                            </div>
+                        </div>
+
+                        <div class="service-icon-box-title">
+                            <h4 class="wt-title"><a href="service-detail.html">Site Work</a></h4>
+                        </div>
+
+                        <div class="service-icon-box-content">
+                            <p>Thorough site assessments and meticulous planning ensure smooth execution of your solar project</p>
+                            <a href="service-detail.html" class="site-button-link site-text-primary">Read More</a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+
+
+
+                <!-- COLUMNS 3 -->
+                <div class="col-lg-3 col-md-6  col-sm-6 m-b30">
+                    <div style="border-radius: 10px;" class="service-icon-box-three shadow-bx text-center">
+
+                        <div class="wt-icon-box-wraper circle-bg  scale-up-center">
+                            <div class="icon-lg inline-icon">
+                                <span class="icon-cell"><img style="width: 90px;height:90px;"
+                                        src="{% static 'images/engineering/repairman.png' %}"></span>
+                            </div>
+                        </div>
+
+                        <div class="service-icon-box-title">
+                            <h4 class="wt-title"><a href="service-detail.html">Installation</a></h4>
+                        </div>
+
+                        <div class="service-icon-box-content">
+                            <p>Efficient, expert installation of solar panels tailored to your energy needs.</p>
+                            <a href="service-detail.html" class="site-button-link site-text-primary">Read More</a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- COLUMNS 4 -->
+                <div class="col-lg-3 col-md-6  col-sm-6 m-b30">
+                    <div style="border-radius: 10px;" class="service-icon-box-three shadow-bx text-center">
+
+                        <div class="wt-icon-box-wraper circle-bg  scale-up-center">
+                            <div class="icon-lg inline-icon">
+                                <span class="icon-cell"><img style="width: 90px;height:90px;"
+                                        src="{% static 'images/engineering/solar-cell.png' %}"></span>
+                            </div>
+                        </div>
+
+                        <div class="service-icon-box-title">
+                            <h4 class="wt-title"><a href="service-detail.html">Rooftop Systems</a></h4>
+                        </div>
+
+                        <div class="service-icon-box-content">
+                            <p>Efficient rooftop solar systems custom-designed to harness solar energy for your home or business</p>
+                            <a href="service-detail.html" class="site-button-link site-text-primary">Read More</a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- INTRO SECTION END -->
+
+
+<!-- OUR TEAM START -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- shdfjhsjkhgkfdhgshdfgjkfghjmf;khgjk; -->
+
+<!-- CLIENT LOGO SECTION START -->
+<div class="section-full bg-gray p-t90 p-b50">
+    <div class="container">
+        <h2 class="text-center pb-5" style="color:#939597">Our Channel Partners</h2>
+        <div id="partner-carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                            <a href="#" class="wt-img-effect client-logo2-media active">
+                                <img src="{% static 'images/extra/partners/adani solar.png' %}" alt="Adani Solar">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                            <a href="#" class="wt-img-effect client-logo2-media">
+                                <img src="{% static 'images/extra/partners/Adani-Solar footer.png' %}"
+                                    alt="Adani Solar">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                            <a href="#" class="wt-img-effect client-logo2-media">
+                                <img src="{% static 'images/extra/partners/anchor.png' %}" alt="Anchor">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                            <a href="#" class="wt-img-effect client-logo2-media">
+                                <img src="{% static 'images/extra/partners/BHEL_logo.PNG' %}" alt="BHEL">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                            <a href="#" class="wt-img-effect client-logo2-media">
+                                <img src="{% static 'images/extra/partners/BIGBAGS.png' %}" alt="Big Bags">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                            <a href="#" class="wt-img-effect client-logo2-media">
+                                <img src="{% static 'images/extra/partners/canadian-solar.png' %}" alt="Canadian Solar">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                            <a href="#" class="wt-img-effect client-logo2-media">
+                                <img src="{% static 'images/extra/partners/dura line.png' %}" alt="Dura Line">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                            <a href="#" class="wt-img-effect client-logo2-media">
+                                <img src="{% static 'images/extra/partners/EESL.jpg' %}" alt="EESL">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                            <a href="#" class="wt-img-effect client-logo2-media">
+                                <img src="{% static 'images/extra/partners/enphase energy.png' %}" alt="Enphase Energy">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                            <a href="#" class="wt-img-effect client-logo2-media">
+                                <img src="{% static 'images/extra/partners/EverVolt.jpg' %}" alt="EverVolt">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                            <a href="#" class="wt-img-effect client-logo2-media">
+                                <img src="{% static 'images/extra/partners/fineolex pipes.png' %}" alt="Fineolex Pipes">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                            <a href="#" class="wt-img-effect client-logo2-media">
+                                <img src="{% static 'images/extra/partners/genus.png' %}" alt="Genus">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                            <a href="#" class="wt-img-effect client-logo2-media">
+                                <img src="{% static 'images/extra/partners/goodwe.png' %}" alt="GoodWe">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                            <a href="#" class="wt-img-effect client-logo2-media">
+                                <img src="{% static 'images/extra/partners/hero future.jpg' %}" alt="Hero Future">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                            <a href="#" class="wt-img-effect client-logo2-media">
+                                <img src="{% static 'images/extra/partners/LT.png' %}" alt="LT">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                            <a href="#" class="wt-img-effect client-logo2-media">
+                                <img src="{% static 'images/extra/partners/NTPC_Logo.svg' %}" alt="NTPC Logo">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                            <a href="#" class="wt-img-effect client-logo2-media">
+                                <img src="{% static 'images/extra/partners/polycab-logo.png' %}" alt="Polycab">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                            <a href="#" class="wt-img-effect client-logo2-media">
+                                <img src="{% static 'images/extra/partners/sapa.png' %}" alt="Sapa">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                            <a href="#" class="wt-img-effect client-logo2-media">
+                                <img src="{% static 'images/extra/partners/sequre.jpg' %}" alt="Sequre">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                            <a href="#" class="wt-img-effect client-logo2-media">
+                                <img src="{% static 'images/extra/partners/skyfri.png' %}" alt="Skyfri">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                            <a href="#" class="wt-img-effect client-logo2-media">
+                                <img src="{% static 'images/extra/partners/SOLAR_SQUARE.png' %}" alt="Solar Square">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                            <a href="#" class="wt-img-effect client-logo2-media">
+                                <img src="{% static 'images/extra/partners/SolarEdge.png' %}" alt="SolarEdge">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                            <a href="#" class="wt-img-effect client-logo2-media">
+                                <img src="{% static 'images/extra/partners/Sterling-Wilson.jpg' %}"
+                                    alt="Sterling Wilson">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                            <a href="#" class="wt-img-effect client-logo2-media">
+                                <img src="{% static 'images/extra/partners/sunlight future.png' %}"
+                                    alt="Sunlight Future">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- LATEST PRJECTS SLIDER START -->
+<div class="section-full p-t90 p-b50 p-lr30 project-style-new ">
+
+    <div class="container">
+
+        <!-- TITLE START-->
+        <div class="section-head center wt-small-separator-outer">
+            <div class="wt-small-separator site-text-primary">
+                <div>Explore Recent Work</div>
+            </div>
+            <h2>Some of our finished projects that will amaze you</h2>
+        </div>
+        <!-- TITLE END-->
+
+    </div>
+
+    <!-- IMAGE CAROUSEL START -->
+    <div class="section-content">
+        <div class="container">
+            <div class="owl-carousel project-carousel  owl-btn-vertical-center m-b30">
+                <!-- COLUMNS 1 -->
+                <div class="item">
+                    <div class="project-new-2">
+                        <div class="wt-img-effect">
+                            <img src="{% static 'images/extra/panels/1.jpg' %}" alt="">
+                            <div class="project-view">
+                                <a class="elem pic-long project-view-btn"
+                                    href="{% static 'images/extra/panels/1.jpg' %}" title="Nh-16 Highway Bridge"
+                                    data-lcl-txt="" data-lcl-author=""
+                                    data-lcl-thumb="{% static 'images/home-11/project/1.jpg' %}">
+                                    <i class="fa fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-new-content2">
+                            <span class="project-new-category">Bridger</span>
+                            <h3 class="wt-title"><a href="javascript:void(0);">Nh-16 Highway Bridge</a></h3>
+                            <p>You can dream, create, design and build the most wonderful place in the world.</p>
+                            <a href="service-detail.html" class="site-button-link site-text-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- COLUMNS 2 -->
+                <div class="item">
+                    <div class="project-new-2">
+                        <div class="wt-img-effect">
+                            <img src="{% static 'images/extra/panels/2.jpg' %}" alt="">
+                            <div class="project-view">
+                                <a class="elem pic-long project-view-btn"
+                                    href="{% static 'images/extra/panels/2.jpg' %}" title="Ruma Dam Project"
+                                    data-lcl-txt="" data-lcl-author=""
+                                    data-lcl-thumb="{% static 'images/home-11/project/2.jpg' %}">
+                                    <i class="fa fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-new-content2">
+                            <span class="project-new-category">Engineering</span>
+                            <h3 class="wt-title"><a href="javascript:void(0);">Ruma Dam Project</a></h3>
+                            <p>You can dream, create, design and build the most wonderful place in the world.</p>
+                            <a href="service-detail.html" class="site-button-link site-text-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- COLUMNS 3 -->
+                <div class="item">
+                    <div class="project-new-2">
+                        <div class="wt-img-effect">
+                            <img src="{% static 'images/extra/panels/3.jpg' %}" alt="">
+                            <div class="project-view">
+                                <a class="elem pic-long project-view-btn"
+                                    href="{% static 'images/extra/panels/3.jpg' %}" title="Dubai Housing Project"
+                                    data-lcl-txt="" data-lcl-author=""
+                                    data-lcl-thumb="{% static 'images/home-11/project/3.jpg' %}">
+                                    <i class="fa fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-new-content2">
+                            <span class="project-new-category">Apartment</span>
+                            <h3 class="wt-title"><a href="javascript:void(0);">Dubai Housing Project</a></h3>
+                            <p>You can dream, create, design and build the most wonderful place in the world.</p>
+                            <a href="service-detail.html" class="site-button-link site-text-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- COLUMNS 4 -->
+                <div class="item">
+                    <div class="project-new-2">
+                        <div class="wt-img-effect">
+                            <img src="{% static 'images/extra/panels/4.jpg' %}" alt="">
+                            <div class="project-view">
+                                <a class="elem pic-long project-view-btn"
+                                    href="{% static 'images/extra/panels/4.jpg' %}" title="House Extensions"
+                                    data-lcl-txt="" data-lcl-author=""
+                                    data-lcl-thumb="{% static 'images/home-11/project/4.jpg' %}">
+                                    <i class="fa fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-new-content2">
+                            <span class="project-new-category">Building</span>
+                            <h3 class="wt-title"><a href="javascript:void(0);">House Extensions</a></h3>
+                            <p>You can dream, create, design and build the most wonderful place in the world.</p>
+                            <a href="service-detail.html" class="site-button-link site-text-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- COLUMNS 5 -->
+                <div class="item">
+                    <div class="project-new-2">
+                        <div class="wt-img-effect">
+                            <img src="{% static 'images/extra/panels/5.jpg' %}" alt="">
+                            <div class="project-view">
+                                <a class="elem pic-long project-view-btn"
+                                    href="{% static 'images/extra/panels/5.jpgv' %}" title="Renovation" data-lcl-txt=""
+                                    data-lcl-author="" data-lcl-thumb="{% static 'images/home-11/project/5.jpg' %}">
+                                    <i class="fa fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-new-content2">
+                            <span class="project-new-category">Renovation</span>
+                            <h3 class="wt-title"><a href="javascript:void(0);">Renovation</a></h3>
+                            <p>You can dream, create, design and build the most wonderful place in the world.</p>
+                            <a href="service-detail.html" class="site-button-link site-text-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- COLUMNS 6 -->
+                <div class="item">
+                    <div class="project-new-2">
+                        <div class="wt-img-effect">
+                            <img src="{% static 'images/extra/panels/6.jpg' %}" alt="">
+                            <div class="project-view">
+                                <a class="elem pic-long project-view-btn"
+                                    href="{% static 'images/extra/panels/6.jpg' %}" title="Tehla Mines Project"
+                                    data-lcl-txt="" data-lcl-author=""
+                                    data-lcl-thumb="{% static 'images/home-11/project/6.jpg' %}">
+                                    <i class="fa fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-new-content2">
+                            <span class="project-new-category">Mines</span>
+                            <h3 class="wt-title"><a href="javascript:void(0);">Tehla Mines Project</a></h3>
+                            <p>You can dream, create, design and build the most wonderful place in the world.</p>
+                            <a href="service-detail.html" class="site-button-link site-text-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+<!-- CONTENT END -->
+
+<!-- FOOTER START -->
+<footer class="site-footer footer-large footer-dark text-white footer-style3">
+
+
+    <!-- FOOTER BLOCKES START -->
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="widget widget_about">
+                        <div class="logo-footer clearfix">
+                            <a href="{% url 'index' %}"><img src="{% static 'images/extra/logo.png' %}" alt=""></a>
+                        </div>
+                        <p>Sun-Ray Solar was established in the year 1996 manufacturing Solar Water Heaters
+                            under the brand name “Sun-Ray”. Later in 2014,
+                            since the power situation in the country was grim, we launched Solar photovoltaic Systems
+                        </p>
+                    </div>
+                    <div class="widget recent-posts-entry">
+                        <ul class="widget_address">
+                            <li><i class="fa fa-map-marker"></i>Bejai church Complex,Mangalore 575 004</li>
+                            <li><i class="fa fa-envelope"></i>contact@sunraysol.com</li>
+                            <li> <i class="fa fa-phone"></i>9538010100</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="widget widget_services">
+                        <h3 class="widget-title">Projects</h3>
+                        <ul>
+                            <li><a href="#">Regulatory Compliance</a></li>
+                            <li><a href="#">Office Partition Walls</a></li>
+                            <li><a href="#">Highway Energy Station</a></li>
+                            <li><a href="#">Villy Manufacturing</a></li>
+                            <li><a href="#">Compliance Seminar</a></li>
+                            <li><a href="#">Role of the Importer</a></li>
+                            <li><a href="#">Colour Sensing</a></li>
+                            <li><a href="#">Fire Extinguishing</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="widget widget_services">
+                        <h3 class="widget-title">Our Services</h3>
+                        <ul>
+                            <li><a href="#">Oil &amp; Gas Factory</a></li>
+                            <li><a href="#">Chemical Research</a></li>
+                            <li><a href="#">Mechanical</a></li>
+                            <li><a href="#">Manufacturing</a></li>
+                            <li><a href="#">Auto Engineering </a></li>
+                            <li><a href="#">Metal Industry </a></li>
+                            <li><a href="#">Agricultural Processing</a></li>
+                            <li><a href="#">Material Engineering </a></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="widget widget_newsletter">
+                        <h3 class="widget-title">Newsletter</h3>
+                        <p>Subscribe to our newsletter to receive latest news on our services.</p>
+                        <div class="newsletter-input">
+                            <input id="email" type="text" class="form-control" name="email"
+                                placeholder="Enter your email">
+                            <button type="submit" class="nl-search-btn site-bg-primary title-style-2">Sign Up</button>
+                        </div>
+                        <p>We don’t do mail to spam &amp; your mail id is confidential.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER COPYRIGHT -->
+
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="wt-footer-bot-left d-flex justify-content-between">
+                <span class="copyrights-text">Copyright © 2020 <span class="site-text-primary">Dhanwis</span></span>
+                <ul class="copyrights-nav">
+                    <li><a href="javascript:void(0);">Terms &amp; Condition</a></li>
+                    <li><a href="javascript:void(0);">Privacy Policy</a></li>
+                    <li><a href="javascript:void(0);">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+</footer>
+<!-- FOOTER END -->
+
+<!-- Get In Touch -->
+<div class="contact-slide-hide bg-cover bg-no-repeat"
+    style="background-image:url({% static 'images/background/bg-7.jpg' %})">
+    <div class="contact-nav">
+        <a href="javascript:void(0)" class="contact_close">×</a>
+        <div class="contact-nav-form">
+            <div class="contact-nav-info bg-white p-a30 bg-center bg-no-repeat"
+                style="background-image:url({% static 'images/background/bg-map2.png' %});">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4">
+                        <div class="contact-nav-media-section">
+                            <div class="contact-nav-media">
+                                <img src="images/self-pic.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-8">
+                        <form class="cons-contact-form" method="post" action="form-handler2.php">
+                            <div class="m-b30">
+                                <!-- TITLE START -->
+                                <h2 class="m-b30">Get In Touch</h2>
+                                <!-- TITLE END -->
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6">
+                                        <div class="form-group">
+                                            <input name="username" type="text" required="" class="form-control"
+                                                placeholder="Name">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 col-sm-6">
+                                        <div class="form-group">
+                                            <input name="email" type="text" class="form-control" required=""
+                                                placeholder="Email">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 col-sm-6">
+                                        <div class="form-group">
+                                            <input name="phone" type="text" class="form-control" required=""
+                                                placeholder="Phone">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 col-sm-6">
+                                        <div class="form-group">
+                                            <input name="subject" type="text" class="form-control" required=""
+                                                placeholder="Subject">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <textarea name="message" class="form-control" rows="4"
+                                                placeholder="Message"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <button type="submit" class="site-button site-btn-effect">Submit Now</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </form>
+                        <div class="contact-nav-inner text-black">
+                            <!-- TITLE START -->
+                            <h2 class="m-b30">Contact Info</h2>
+                            <!-- TITLE END -->
+                            <div class="row">
+                                <div class="col-lg-4 col-md-12">
+                                    <div class="wt-icon-box-wraper left icon-shake-outer">
+                                        <div class="icon-content">
+                                            <h4 class="m-t0">Phone number</h4>
+                                            <p>(456) 789 10 12</p>
+                                            <p>(456) 789 10 15</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-12">
+                                    <div class="wt-icon-box-wraper left icon-shake-outer">
+                                        <div class="icon-content">
+                                            <h4 class="m-t0">Email address</h4>
+                                            <p>demo@gmail.com</p>
+                                            <p>indusinfo@gmail.com</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-12">
+                                    <div class="wt-icon-box-wraper left icon-shake-outer">
+                                        <div class="icon-content">
+                                            <h4 class="m-t0">Address info</h4>
+                                            <p>1363-1385 Sunset Blvd Los Angeles</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- BUTTON TOP START -->
+<button class="scroltop"><span class="fa fa-angle-up  relative" id="btn-vibrate"></span></button>
+
+
+
+</div>
+
+<!-- LOADING AREA START ===== -->
+{% comment %} <div class="loading-area">
+    <div class="loading-box"></div>
+    <div class="loading-pic">
+
+        <div class="loader">
+            <span class="block-1"></span>
+            <span class="block-2"></span>
+            <span class="block-3"></span>
+            <span class="block-4"></span>
+            <span class="block-5"></span>
+            <span class="block-6"></span>
+            <span class="block-7"></span>
+            <span class="block-8"></span>
+            <span class="block-9"></span>
+            <span class="block-10"></span>
+            <span class="block-11"></span>
+            <span class="block-12"></span>
+            <span class="block-13"></span>
+            <span class="block-14"></span>
+            <span class="block-15"></span>
+            <span class="block-16"></span>
+        </div>
+    </div>
+</div> {% endcomment %}
+<!-- LOADING AREA  END ====== -->
+<script>
+    // Activate the carousel with a 3-second interval
+    $('#partnersCarousel').carousel({
+        interval: 30
+    });
+</script>
+<!-- JAVASCRIPT  FILES ========================================= -->
+<script src="{% static 'js/jquery-2.2.0.min.js' %}"></script><!-- JQUERY.MIN JS -->
+<script src="{% static 'js/popper.min.js' %}"></script><!-- POPPER.MIN JS -->
+<script src="{% static 'js/bootstrap.min.js' %}"></script><!-- BOOTSTRAP.MIN JS -->
+<script src="{% static 'js/bootstrap-select.min.js' %}"></script><!-- Form js -->
+<script src="{% static 'js/magnific-popup.min.js' %}"></script><!-- MAGNIFIC-POPUP JS -->
+<script src="{% static 'js/waypoints.min.js' %}"></script><!-- WAYPOINTS JS -->
+<script src="{% static 'js/counterup.min.js' %}"></script><!-- COUNTERUP JS -->
+<script src="{% static 'js/waypoints-sticky.min.js' %}"></script><!-- STICKY HEADER -->
+<script src="{% static 'js/isotope.pkgd.min.js' %}"></script><!-- MASONRY  -->
+<script src="{% static 'js/owl.carousel.min.js' %}"></script><!-- OWL  SLIDER  -->
+<script src="{% static 'js/stellar.min.js' %}"></script><!-- PARALLAX BG IMAGE   -->
+<script src="{% static 'js/theia-sticky-sidebar.js' %}"></script><!-- STICKY SIDEBAR  -->
+<script src="{% static 'js/jquery.bootstrap-touchspin.js' %}"></script><!-- FORM JS -->
+<script src="{% static 'js/custom.js' %}"></script><!-- CUSTOM FUCTIONS  -->
+<script src="{% static 'js/lc_lightbox.lite.js' %}"></script><!-- IMAGE POPUP -->
+<script src="{% static 'js/switcher.js' %}"></script><!-- SHORTCODE FUCTIONS  -->
+
+<!-- REVOLUTION JS FILES -->
+
+<script src="{% static 'plugins/revolution/revolution/js/jquery.themepunch.tools.min.js' %}"></script>
+<script src="{% static 'plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js' %}"></script>
+
+<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+<script src="{% static 'plugins/revolution/revolution/js/extensions/revolution-plugin.js' %}"></script>
+
+<!-- REVOLUTION SLIDER SCRIPT FILES -->
+<script src="{% static 'js/rev-script-11.js' %}"></script>
+
+
+<!-- STYLE SWITCHER  ======= -->
+
+<!-- STYLE SWITCHER END ==== -->
+
+{% endblock %}

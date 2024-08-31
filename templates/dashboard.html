@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .btn-link {
+            margin-bottom: 10px;
+        }
+
+        .project-card {
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+
+        .project-img {
+            max-width: 200px;
+            max-height: 200px;
+        }
+
+        .logout-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        /* Example CSS for badge customization */
+.badge-primary {
+    background-color: #007bff; /* Blue background */
+    color: #fff; /* White text */
+    font-size: 12px; /* Adjust font size */
+}
+
+.badge-success {
+    background-color: #28a745; /* Green background */
+    color: #fff; /* White text */
+    font-size: 12px; /* Adjust font size */
+}
+.project-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-card .card-img-top {
+    max-width: 100%;
+    height: auto;
+    margin: auto; /* Center the image horizontally */
+}
+
+.project-card .card-body {
+    flex: 1; /* Ensure the card body takes remaining space */
+}
+
+    </style>
+</head>
+<body>
+    
+    <div class="container-fluid bg-primary text-white p-3">
+        <h1>Welcome to the Dashboard</h1>
+        <span class="float-left">Logged in as: {{ user.username }}</span>
+        <a href="{% url 'logout' %}" class="btn btn-sm bg-warning ">Logout</a>
+        <a href="{% url 'upload_project' %}" class="btn bg-white btn-sm">Upload Project</a>
+        <a href="{% url 'upload_large_project' %}" class="btn bg-white btn-sm">Upload Large Project</a>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row">
+            {% for project in projects %}
+            <div class="col-md-4">
+                <div class="card project-card text-center pt-2 pb-2">
+                    <img src="{{ project.image.url }}" class="card-img-top project-img" alt="Project Image">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ project.title }}</h5>
+                        <p class="card-text">{{ project.description }}</p>
+                        <a href="{% url 'edit_project' project.pk %}" class="btn btn-primary btn-sm">Edit</a>
+                        <a href="{% url 'delete_project' project.pk %}" class="btn btn-danger btn-sm ml-2">Delete</a>
+                    </div>
+                    <div class="card-footer bg-primary text-white">
+                        <span class="badge badge-pill badge-light">Project</span> <!-- Blue label for projects -->
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    
+    <div class="container mt-4">
+        <div class="row">
+            {% for large_project in large_projects %}
+            <div class="col-md-4">
+                <div class="card project-card text-center pt-3 pb-3">
+                    <img src="{{ large_project.image.url }}" class="card-img-top project-img mx-auto" alt="Large Project Image" style="max-height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ large_project.title }}</h5>
+                        <p class="card-text"><strong>KW:</strong> {{ large_project.kw }}</p>
+                        <p class="card-text"><strong>Place:</strong> {{ large_project.place }}</p>
+                        <p class="card-text"><strong>Technology:</strong> {{ large_project.technology }}</p>
+                        <p class="card-text"><strong>Saves:</strong> {{ large_project.saves }}</p>
+                        <p class="card-text"><strong>Trees:</strong> {{ large_project.trees }}</p>
+                        <p class="card-text"><strong>Tons:</strong> {{ large_project.tons }}</p>
+                        <div class="d-flex justify-content-center mt-3">
+                            <a href="{% url 'edit_large_project' large_project.pk %}" class="btn btn-primary btn-sm mr-2">Edit</a>
+                            <a href="{% url 'delete_large_project' large_project.pk %}" class="btn btn-danger btn-sm">Delete</a>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-success text-white">
+                        <span class="badge badge-pill badge-light">Large Project</span>
+                    </div>
+                </div>
+            </div>
+            
+            
+            {% endfor %}
+        </div>
+    </div>
+      
+    
+    
+    
+    
+    <!-- Bootstrap JS and dependencies (if needed) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

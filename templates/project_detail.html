@@ -1,0 +1,347 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- META -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="robots" content="">    
+    <meta name="description" content="">
+    
+    <!-- FAVICONS ICON -->
+    <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'images/favicon.png' %}">
+    
+    <!-- PAGE TITLE HERE -->
+    <title>SunRay-Projects</title>
+    
+    <!-- MOBILE SPECIFIC -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <!-- BOOTSTRAP STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+    <!-- FONTAWESOME STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/fontawesome/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- OWL CAROUSEL STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/owl.carousel.min.css' %}">
+    <!-- BOOTSTRAP SLECT BOX STYLE SHEET  -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap-select.min.css' %}">    
+    <!-- MAGNIFIC POPUP STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/magnific-popup.min.css' %}">
+    <!-- LOADER STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/loader.min.css' %}">    
+    <!-- MAIN STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/stylet.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/about.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/service.css' %}">
+        <!-- FLATICON STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/flaticon.min.css' %}"> 
+    
+    <!-- IMAGE POPUP -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/lc_lightbox.css' %}">
+    
+    <!-- THEME COLOR CHANGE STYLE SHEET -->
+    <link rel="stylesheet" class="skin" type="text/css" href="{% static 'css/skin/skin-1.css' %}">
+    <!-- SIDE SWITCHER STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/switcher.css' %}">  
+     
+ 
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+     <!-- REVOLUTION SLIDER CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'plugins/revolution/revolution/css/settings.css' %}">
+    <!-- REVOLUTION NAVIGATION STYLE -->
+    <link rel="stylesheet" type="text/css" href="{% static 'plugins/revolution/revolution/css/navigation.css' %}">
+        
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Teko:300,400,500,600,700&amp;display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Poppins&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&amp;display=swap" rel="stylesheet"> 
+  <style>
+    /* Custom styles here */
+    #map {
+      height: 400px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+<div>
+<!-- Navigation -->
+<div>
+    <!-- Navigation -->
+    <header class="site-header header-style-11  mobile-sider-drawer-menu">
+        <div class="header-style-11-content">
+             <div class="header-middle-wraper">     
+                <div class="container">
+                    <div class="header-middle d-flex justify-content-between align-items-center">
+                        <div class="logo-header pt-3 pb-3">
+                            <div class="logo-header-inner logo-header-one">
+                                <a href="{% url 'index' %}">
+                                    <img src="{% static 'images/extra/logo.png' %}" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="header-info-wraper">
+                            <div class="header-info">
+                                <ul>
+                                    <li>
+
+                        
+                                    <li>
+                                        <div class="wt-icon-box-wraper left">
+                                            <div class="wt-icon-box-xs site-bg-primary radius">
+                                                <span class="icon-cell site-text-white"><i class="fa fa-envelope"></i></span>
+                                            </div>
+                                            <div class="icon-content">
+                                                <p>Send Us Email</p>
+                                                <h4 class="wt-tilte">CONTACT@sunraysol.com</h4>
+                                            </div>
+                                        </div>
+                                    </li>                                
+                        
+                                    <li>
+                                        <div class="wt-icon-box-wraper left">
+                                            <div class="wt-icon-box-xs site-bg-primary radius">
+                                                <span class="icon-cell site-text-white"><i class="fa fa-phone"></i></span>
+                                            </div>
+                                            <div class="icon-content">
+                                                <p>Get Quick Support</p>
+                                                <h4 class="wt-tilte">Tel: 0824 2215291</h4>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+    
+    
+    
+                    </div>
+                </div>
+             </div>
+            <div class="header-bottom"> 
+                
+                <div class="sticky-header main-bar-wraper  navbar-expand-lg">
+                
+                    <div class="main-bar header-bottom">
+                        <div class="container-block clearfix">
+    
+                            <div class="navigation-bar">
+                                <!-- NAV Toggle Button -->
+                                <button id="mobile-side-drawer" data-target=".header-nav" data-toggle="collapse" type="button" class="navbar-toggler collapsed">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar icon-bar-first"></span>
+                                    <span class="icon-bar icon-bar-two"></span>
+                                    <span class="icon-bar icon-bar-three"></span>
+                                </button> 
+        
+                                <!-- MAIN Vav -->
+                                <div class="nav-animation header-nav navbar-collapse collapse d-flex justify-content-between">
+                            
+                                    <ul class="nav navbar-nav">
+                                        <li><a href="{% url 'index' %}">Home</a>
+
+                                        </li>
+
+                                        <li><a href="{% url 'about' %}">About</a>
+
+                                        </li>
+                                        <li><a href="{% url 'services' %}">Gallery</a>
+
+                                        </li>
+                                        <li><a href="{% url 'project_list' %}">Project</a></li>
+
+                                        <li><a href="{% url 'contacts' %}">Contact us</a></li>
+                                    </ul>
+        
+                                </div>
+                                
+                                <!-- Header Right Section-->
+                                <div class="extra-nav header-1-nav">
+                                    <!-- <div class="extra-cell one">
+                                        <div class="header-search">
+                                            <a href="#search-two" class="header-search-icon"><i class="fa fa-search"></i></a>
+                                        </div>    
+                                    </div> -->
+                                    <div class="extra-cell two">
+                                        <div class="extra-cell one">
+                                            <div class="header-search">
+                                                <a href="#search-two" class="header-search-icon"><i class="fa fa-search"></i></a>
+                                            </div>    
+                                        </div>
+                                        
+                                        <div class="cart-dropdown-item-wraper clearfix">
+                                            <div class="nav-cart-content">
+                                                
+                                                <div class="nav-cart-items p-a15">
+                                                    <div class="nav-cart-item clearfix">
+                                                        <div class="nav-cart-item-image">
+                                                            <a href="#"><img src="{% static 'images/home-11/cart/pic-1.jpg' %}" alt="p-1"></a>
+                                                        </div>
+                                                        <div class="nav-cart-item-desc">
+                                                            <span class="nav-cart-item-price"><strong>2</strong> x $19.99</span>
+                                                            <a href="#">Heavy helmet</a>
+                                                            <a href="#" class="nav-cart-item-quantity radius-sm">x</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="nav-cart-item clearfix">
+                                                        <div class="nav-cart-item-image">
+                                                            <a href="#"><img src="{% static 'images/home-11/cart/pic-1.jpg' %}" alt="p-2"></a>
+                                                        </div>
+                                                        <div class="nav-cart-item-desc">
+                                                            <span class="nav-cart-item-price"><strong>1</strong> x $24.99</span>
+                                                            <a href="#">Power drill</a>
+                                                            <a href="#" class="nav-cart-item-quantity radius-sm">x</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="nav-cart-title p-tb10 p-lr15 d-flex">
+                                                    <h4 class="m-a0">Subtotal:</h4>
+                                                    <h5 class="m-a0">$67.97</h5>
+                                                </div>
+                                                <div class="nav-cart-action p-a15 d-flex justify-content-start">
+                                                    <button class="site-button" type="button">View Cart</button>
+                                                    <button class="site-button-secondry" type="button">Checkout </button>
+                                                </div>
+                                            </div>
+                                        </div>                            
+                                    </div>                                
+                                </div> 
+    
+                            </div>
+                            
+                        </div>   
+                    </div>
+    
+                    <!-- SITE Search -->
+                    <div id="search-two"> 
+                        <span class="close"></span>
+                        <form role="search-two" id="searchform" action="/search" method="get" class="radius-xl">
+                            <div class="input-group">
+                                <input class="form-control" value="" name="q" type="search" placeholder="Type to search">
+                                <span class="input-group-append"><button type="button" class="search-btn"><i class="fa fa-paper-plane"></i></button></span>
+                            </div> 
+                        </form>
+                    </div> 
+            
+                </div>
+            </div>
+        </div>                
+        
+    </header>
+    
+    </div>
+
+
+
+
+<!-- body starts here -->
+
+
+
+{% block content %}
+<section class="section gray-bg" >
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="row">
+                    <div style="border-width: 0px;" class="col-md-6 mb-4 mb-md-0 card p-3">
+                        <img src="{{ project.image.url }}" class="img-fluid" alt="{{ project.title }}">
+                    </div>
+                    <div style="border-width: 0px;" class="col-md-6 card">
+                        <h2>{{ project.title }}</h2>
+                        <p style="font-size: 13px;color: brown;" class="blog-meta">Posted on {{ project.date_created }}</p>
+                        <p>{{ project.description }}</p>
+                       
+                        <!-- Add more details as needed -->
+                    </div>
+                    <div style="border-width: 0px;" class="container card "> <p><strong>Project Details:</strong> {{ project.project_details }}</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+
+
+<!-- body starts here -->
+    
+
+
+
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-4">
+  <div class="container text-center">
+    <p>&copy; 2024 SunRay. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- JavaScript Libraries -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+<!-- Google Maps API -->
+<script>
+  function initMap() {
+    // The location of the company
+    var companyLocation = { lat: 40.7128, lng: -74.0060 };
+    // The map, centered at companyLocation
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 12,
+      center: companyLocation
+    });
+    // The marker, positioned at companyLocation
+    var marker = new google.maps.Marker({
+      position: companyLocation,
+      map: map
+    });
+  }
+</script>
+<!-- Replace YOUR_API_KEY with your Google Maps API key -->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+<script src="{% static 'js/jquery-2.2.0.min.js' %}"></script><!-- JQUERY.MIN JS -->
+<script src="{% static 'js/popper.min.js' %}"></script><!-- POPPER.MIN JS -->
+<script src="{% static 'js/bootstrap.min.js' %}"></script><!-- BOOTSTRAP.MIN JS -->
+<script src="{% static 'js/bootstrap-select.min.js' %}"></script><!-- Form js -->
+<script src="{% static 'js/magnific-popup.min.js' %}"></script><!-- MAGNIFIC-POPUP JS -->
+<script src="{% static 'js/waypoints.min.js' %}"></script><!-- WAYPOINTS JS -->
+<script src="{% static 'js/counterup.min.js' %}"></script><!-- COUNTERUP JS -->
+<script src="{% static 'js/waypoints-sticky.min.js' %}"></script><!-- STICKY HEADER -->
+<script src="{% static 'js/isotope.pkgd.min.js' %}"></script><!-- MASONRY  -->
+<script src="{% static 'js/owl.carousel.min.js' %}"></script><!-- OWL  SLIDER  -->
+<script src="{% static 'js/stellar.min.js' %}"></script><!-- PARALLAX BG IMAGE   -->
+<script src="{% static 'js/theia-sticky-sidebar.js' %}"></script><!-- STICKY SIDEBAR  -->
+<script src="{% static 'js/jquery.bootstrap-touchspin.js' %}"></script><!-- FORM JS -->
+<script src="{% static 'js/custom.js' %}"></script><!-- CUSTOM FUCTIONS  -->
+<script src="{% static 'js/lc_lightbox.lite.js' %}"></script><!-- IMAGE POPUP -->
+<script src="{% static 'js/switcher.js' %}"></script><!-- SHORTCODE FUCTIONS  -->
+
+<!-- REVOLUTION JS FILES -->
+
+<script src="{% static 'plugins/revolution/revolution/js/jquery.themepunch.tools.min.js' %}"></script>
+<script src="{% static 'plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js' %}"></script>
+
+<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->	
+<script src="{% static 'plugins/revolution/revolution/js/extensions/revolution-plugin.js' %}"></script>
+
+<!-- REVOLUTION SLIDER SCRIPT FILES -->
+<script src="{% static 'js/rev-script-11.js' %}"></script>
+</body>
+</html>

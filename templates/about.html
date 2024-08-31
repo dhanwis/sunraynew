@@ -1,0 +1,656 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- META -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="robots" content="">    
+    <meta name="description" content="">
+    
+    <!-- FAVICONS ICON -->
+    <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'images/favicon.png' %}">
+    
+    <!-- PAGE TITLE HERE -->
+    <title>SunRay-Projects</title>
+    
+    <!-- MOBILE SPECIFIC -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    
+    <!-- BOOTSTRAP STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+    <!-- FONTAWESOME STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/fontawesome/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- OWL CAROUSEL STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/owl.carousel.min.css' %}">
+    <!-- BOOTSTRAP SLECT BOX STYLE SHEET  -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap-select.min.css' %}">    
+    <!-- MAGNIFIC POPUP STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/magnific-popup.min.css' %}">
+    <!-- LOADER STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/loader.min.css' %}">    
+    <!-- MAIN STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/stylet.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/about.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/service.css' %}">
+        <!-- FLATICON STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/flaticon.min.css' %}"> 
+    
+    <!-- IMAGE POPUP -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/lc_lightbox.css' %}">
+    
+    <!-- THEME COLOR CHANGE STYLE SHEET -->
+    <link rel="stylesheet" class="skin" type="text/css" href="{% static 'css/skin/skin-1.css' %}">
+    <!-- SIDE SWITCHER STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/switcher.css' %}">  
+     <link rel="stylesheet" href="{% static 'css/photo.css' %}">
+ 
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+     <!-- REVOLUTION SLIDER CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'plugins/revolution/revolution/css/settings.css' %}">
+    <!-- REVOLUTION NAVIGATION STYLE -->
+    <link rel="stylesheet" type="text/css" href="{% static 'plugins/revolution/revolution/css/navigation.css' %}">
+        
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Teko:300,400,500,600,700&amp;display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Poppins&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&amp;display=swap" rel="stylesheet"> 
+  <style>
+    /* Custom styles here */
+    #map {
+      height: 400px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+<div>
+<!-- Navigation -->
+<div>
+    <!-- Navigation -->
+    <header class="site-header header-style-11  mobile-sider-drawer-menu">
+        <div class="header-style-11-content" style="margin-top: -50px;" >
+             <div class="header-middle-wraper">     
+                <div class="container">
+                    <div class="header-middle d-flex justify-content-between align-items-center">
+                        <div class="logo-header pt-3 pb-3">
+                            <div class="logo-header-inner logo-header-one">
+                                <a href="{% url 'index' %}">
+                                    <img src="{% static 'images/extra/logo.png' %}" alt=""width="200px" height="160px"   style="margin-top:30px;">
+                                </a>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="header-info-wraper" style="margin-top: 25px;" >
+                            <div class="header-info">
+                                <ul>
+                                    <li>
+                                        <div class="wt-icon-box-wraper left" style="margin-right: 60px; margin-top: 15px;">
+                                            <div class="wt-icon-box-xs site-bg-primary radius">
+                                                <span class="icon-cell site-text-white"><i class="fa fa-envelope"></i></span>
+                                            </div>
+                                            <div class="icon-content">
+                                                <p style="text-align: left;font-size: 14px;">Send Us Email</p>
+                                                <h4 class="wt-tilte">  <a href="mailto:contact@sunraysol.com">contact@sunraysol.com</a></h4>
+                                              <br>
+                                              
+                                            </div>
+                                        </div>
+                                    </li>   
+                                                                 
+                        
+                                    <li>
+                                        <div class="wt-icon-box-wraper left">
+                                            <div class="wt-icon-box-xs site-bg-primary radius">
+                                                <span class="icon-cell site-text-white"><i class="fa fa-phone"></i></span>
+                                            </div>
+                                            <div class="icon-content">
+                                                <p style="text-align: left;font-size: 14px;">Get Quick Support </p>
+                                                <h4 class="wt-tilte" style="text-align: left" >Tel: 0824 2215291 ,Mob:9538010100-karnataka<br>
+                                               <span >Mob:7907668181-Kerala</span> </h4>
+                
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+             </div>
+            <div class="header-bottom"> 
+                
+                <div class="sticky-header main-bar-wraper  navbar-expand-lg">
+                
+                    <div class="main-bar header-bottom">
+                        <div class="container-block clearfix">
+    
+                            <div class="navigation-bar">
+                                <!-- NAV Toggle Button -->
+                                <button id="mobile-side-drawer" data-target=".header-nav" data-toggle="collapse" type="button" class="navbar-toggler collapsed">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar icon-bar-first"></span>
+                                    <span class="icon-bar icon-bar-two"></span>
+                                    <span class="icon-bar icon-bar-three"></span>
+                                </button> 
+        
+                                <!-- MAIN Vav -->
+                                <div class="nav-animation header-nav navbar-collapse collapse d-flex justify-content-between">
+                            
+                                    <ul class="nav navbar-nav">
+                                        <li><a href="{% url 'index' %}">Home</a>
+
+                                        </li>
+
+                                        <li><a href="{% url 'about' %}">About</a>
+
+                                        </li>
+                                        <li><a href="{% url 'services' %}">Gallery</a>
+
+                                        </li>
+                                        <li><a href="{% url 'project_list' %}">Project</a></li>
+
+                                        <li><a href="{% url 'contacts' %}">Contact us</a></li>
+                                    </ul>
+        
+                                </div>
+                                
+                                <!-- Header Right Section-->
+                                {% comment %} <div class="extra-nav header-1-nav">
+                                    <!-- <div class="extra-cell one">
+                                        <div class="header-search">
+                                            <a href="#search-two" class="header-search-icon"><i class="fa fa-search"></i></a>
+                                        </div>    
+                                    </div> -->
+                                    <div class="extra-cell two">
+                                        <div class="extra-cell one">
+                                            <div class="header-search">
+                                                <a href="#search-two" class="header-search-icon"><i class="fa fa-search"></i></a>
+                                            </div>    
+                                        </div>
+                                        
+                                        <div class="cart-dropdown-item-wraper clearfix">
+                                            <div class="nav-cart-content">
+                                                
+                                                <div class="nav-cart-items p-a15">
+                                                    <div class="nav-cart-item clearfix">
+                                                        <div class="nav-cart-item-image">
+                                                            <a href="#"><img src="{% static 'images/home-11/cart/pic-1.jpg' %}" alt="p-1"></a>
+                                                        </div>
+                                                        <div class="nav-cart-item-desc">
+                                                            <span class="nav-cart-item-price"><strong>2</strong> x $19.99</span>
+                                                            <a href="#">Heavy helmet</a>
+                                                            <a href="#" class="nav-cart-item-quantity radius-sm">x</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="nav-cart-item clearfix">
+                                                        <div class="nav-cart-item-image">
+                                                            <a href="#"><img src="{% static 'images/home-11/cart/pic-1.jpg' %}" alt="p-2"></a>
+                                                        </div>
+                                                        <div class="nav-cart-item-desc">
+                                                            <span class="nav-cart-item-price"><strong>1</strong> x $24.99</span>
+                                                            <a href="#">Power drill</a>
+                                                            <a href="#" class="nav-cart-item-quantity radius-sm">x</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="nav-cart-title p-tb10 p-lr15 d-flex">
+                                                    <h4 class="m-a0">Subtotal:</h4>
+                                                    <h5 class="m-a0">$67.97</h5>
+                                                </div>
+                                                <div class="nav-cart-action p-a15 d-flex justify-content-start">
+                                                    <button class="site-button" type="button">View Cart</button>
+                                                    <button class="site-button-secondry" type="button">Checkout </button>
+                                                </div>
+                                            </div>
+                                        </div>                            
+                                    </div>                                
+                                </div>  {% endcomment %}
+    
+                            </div>
+                            
+                        </div>   
+                    </div>
+    
+                    <!-- SITE Search -->
+                    <div id="search-two"> 
+                        <span class="close"></span>
+                        <form role="search-two" id="searchform" action="/search" method="get" class="radius-xl">
+                            <div class="input-group">
+                                <input class="form-control" value="" name="q" type="search" placeholder="Type to search">
+                                <span class="input-group-append"><button type="button" class="search-btn"><i class="fa fa-paper-plane"></i></button></span>
+                            </div> 
+                        </form>
+                    </div> 
+            
+                </div>
+            </div>
+        </div>                
+        
+    </header>
+    
+    </div>
+
+
+
+</div>
+
+
+
+
+<section class="section about-section gray-bg" id="about">
+    <div class="container">
+        <div class="row align-items-center justify-content-around flex-row-reverse">
+            <div class="col-lg-6">
+                <div class="about-text">
+                    <h3 class="dark-color">Why SunRay</h3>
+                    <h4 class="theme-color">YOUR PREFERRED SOLAR &amp; SOULTIONS PROVIDER</h4>
+                    <ul>
+                        <li>Fastest growing company in South India in Solar rooftop and other services.</li>
+                        <li>More than 2 Decades of extensive experience in Solar Industry since 1996.</li>
+                        <li>ISO 9001:2015 Certified Company.</li>
+                        <li>MNRE, ANERT, GEDA, MSME Empanelled Company.</li>
+                    </ul>
+                   
+                   <hr>
+
+
+                   <ul>
+                    <li>Professional team of more than 150 employees.</li>
+                    <li>Fully equipped to provide ongoing operation and maintenance activities of 280 MW capacity.</li>
+                    <li>Guaranteed power generation to protect your investment with after-sales services and AMC's.</li>
+                    <li>Daily Online Monitoring of all our sites from our office for better performance.</li>
+                </ul>
+                
+                    <hr>
+                    <ul>
+                        <li>We propose most economical, flexible and affordable price structure.</li>
+                        <li>24X7 alert response.</li>
+                    </ul>
+                    
+                    <div class="btn-bar">
+                        <a class="px-btn theme" href="/services/">View Works</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 text-center">
+                <div class="about-img">
+                    <img style="border-radius: 10px;" src="{% static 'images/extra/models/5.jpg' %}">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- all block ends here -->
+
+
+
+
+
+
+
+<!-- all blockm starts from here -->
+
+<div style="background-color:#ffffff;margin-top: 30px;" class="section-full bg-gray  p-b50" >
+    <div class="container">
+        <h2 class="text-center pb-5 " style="color:#939597">Our Services</h2>
+        <p class="text-center">
+            Without our key strength of cutting-edge technology, strategic tie-up with global leaders
+            in PV technology, and an experienced system integration team in place, we today have
+            the capability to execute and manage KW Solar PV plants to MW-sized farm/projects.
+            We have revolutionized the way energy is delivered by giving customers a cleaner and
+            more affordable alternative to their monthly utility bills.
+
+        </p>
+    </div>
+</div>
+
+
+<div class="container-fluid">
+    <div class="container mt-4">
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-9"> <!-- Set number of columns based on screen size -->
+
+            <div class="col text-center">
+                <div class="thumbnail">
+                    <img src="{% static 'images/icons8/a1.png' %}" alt="Element1" />
+                    <div class="caption">Viability Studies</div>
+                </div>
+            </div>
+
+            <div class="col text-center">
+                <div class="thumbnail">
+                    <img src="{% static 'images/icons8/a2.png' %}" alt="Element2" />
+                    <div class="caption">Construction</div>
+                </div>
+            </div>
+            <div class="col text-center">
+                <div class="thumbnail">
+                    <img src="{% static 'images/icons8/a3.png' %}" alt="Element3" />
+                    <div class="caption">Design</div>
+                </div>
+            </div>
+            <div class="col text-center ">
+                <div class="thumbnail">
+                    <img src="{% static 'images/icons8/a4.png' %}" alt="Element4" />
+                    <div class="caption">Equipment</div>
+                </div>
+            </div>
+
+
+            <div class="col text-center ">
+                <div class="thumbnail">
+                    <img src="{% static 'images/icons8/a5.png' %}" alt="Element4" />
+                    <div class="caption">Installation</div>
+                </div>
+            </div>
+            <div class="col text-center ">
+                <div class="thumbnail">
+                    <img src="{% static 'images/icons8/a6.png' %}" alt="Element4" />
+                    <div class="caption">Engineering</div>
+                </div>
+            </div>
+
+            <div class="col text-center">
+                <div class="thumbnail">
+                    <img src="{% static 'images/icons8/a7.png' %}" alt="Element4" />
+                    <div class="caption">Permiting</div>
+                </div>
+            </div>
+            <div class="col text-center ">
+                <div class="thumbnail">
+                    <img src="{% static 'images/icons8/a8.png' %}" alt="Element4" />
+                    <div class="caption">Site work</div>
+                </div>
+            </div>
+            <div class="col text-center ">
+                <div class="thumbnail">
+                    <img src="{% static 'images/icons8/a8.png' %}" alt="Element4" />
+                    <div class="caption">Maintainance</div>
+                </div>
+            </div>
+
+
+            <!-- Repeat the following code block for each column -->
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+<section style="background-color: #f5f9fc;" class="timeline_area section_padding">
+    <div class="container pt-3 pb-3">
+        <div class="row" style="margin-left: -150px;">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Single Timeline Content-->
+                    <div class="single-timeline-area">
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                                <div class="single-timeline-content d-flex" style="height: 100%; align-items: flex-start; visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                    <div class="timeline-icon"><i class="fa fa-solid fa-circle" aria-hidden="true"></i></div>
+                                    <div class="timeline-text">
+                                        <h3> Engineering </h3>
+                                        <ul style="font-size:14px;">
+                                            <li>Define Objectives:</li>
+                                            <li>Preliminary design</li>
+                                            <li>Finalisation of design</li>
+                                            <li>Selection of components basic quality norms</li>
+                                            <li>Construction design (detailed engineering)</li>
+                                            <br>
+                                            <br><br>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                                <div class="single-timeline-content d-flex" style="height: 100%; align-items: flex-start; visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
+                                    <div class="timeline-icon"><i class="fa fa-solid fa-circle" aria-hidden="true"></i></div>
+                                    <div class="timeline-text">
+                                        <h3> Procurement </h3>
+                                        <ul style="font-size: 14px;">
+                                            <li>Specifications</li>
+                                            <li>Tendering / bid comparisons</li>
+                                            <li>Contract preparation</li>
+                                            <li>Purchase of modules</li>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <br><br>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                                <div class="single-timeline-content d-flex" style="height: 100%; align-items: flex-start; visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
+                                    <div class="timeline-icon"><i class="fa fa-solid fa-circle" aria-hidden="true"></i></div>
+                                    <div class="timeline-text">
+                                        <h3>Construction</h3>
+                                        <ul style="font-size: 14px;">
+                                            <li>Preparation of installation</li>
+                                            <li>Specialist risk management</li>
+                                            <li>Logistics coordination</li>
+                                            <li>Safety coordination</li>
+                                            <li>Commissioning and performance testing</li>
+                                            <li>Experienced project management and detailed documentation</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+
+
+<div class="container py-5">
+    <div class="row mb-4">
+      <div class="col-lg-5">
+        <h2 class="display-4 font-weight-light">Our team</h2>
+        <p class="font-italic text-muted">Alone we can do so little; together we can do so much</p>
+      </div>
+    </div>
+
+    <div class="row text-center">
+        <div class="col-xl-3 col-sm-6 mb-5 team-section">
+            <div class="bg-white rounded shadow-sm py-5 px-4"><img src="{% static 'images/new datas/Ronald Issac Gomes.jpeg' %}" alt="" width="131"  class="img-fluid rounded mb-3 img-thumbnail shadow-sm team-img">
+
+          <div style="height: 55px;">   
+            <h5 class="mb-0 team-section">Ronald Issac Gomes</h5>
+            <span class="small text-uppercase text-muted team-section" >Founder And Managing Director</span></div> 
+              {% comment %} <ul class="social mb-0 list-inline mt-3">
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+              </ul> {% endcomment %}
+            </div>
+          </div>
+
+           <!-- Team item-->
+ <div class="col-xl-3 col-sm-6 mb-5 team-section" >
+    <div class="bg-white rounded shadow-sm py-5 px-4"><img src="{% static 'images/new datas/Reji Sebastian.jpeg' %}" alt="" width="147" class="img-fluid rounded mb-3 img-thumbnail shadow-sm team-img">
+      <h5 class="mb-0 " >Reji sebastian</h5>
+      <span class="small text-uppercase text-muted " >Director-Technical</span>
+      
+    </div>
+  </div>
+  <!-- End-->
+   <!-- Team item-->
+   <div class="col-xl-3 col-sm-6 mb-5 team-section">
+    <div class="bg-white rounded shadow-sm py-5 px-4"><img src="{% static 'images/new datas/Anitha Gomes.jpeg' %}" alt="" width="135" class="img-fluid rounded mb-3 img-thumbnail shadow-sm team-img">
+    
+      <h5 class="mb-0">Anita Gomes</h5>
+      <span class="small text-uppercase text-muted" >Director-Finance</span>
+      
+    </div>
+  </div>
+  
+  <!-- End-->
+  <!-- Team item-->
+  <div class="col-xl-3 col-sm-6 mb-5 team-section">
+    <div class="bg-white rounded shadow-sm py-5 px-4"><img src="{% static 'images/new datas/WhatsApp Image 2024-06-17 at 1.59.48 PM.jpeg' %}" alt="" width="138" class="img-fluid rounded mb-3 img-thumbnail shadow-sm team-img">
+      <h5 class="mb-0">Juby Mary Chacko</h5>
+      <span class="small text-uppercase text-muted">Director</span>
+      
+    </div>
+  </div>
+  <!-- End-->
+     <!-- Team item-->
+   <div class="col-xl-3 col-sm-6 mb-5 team-section">
+    <div class="bg-white rounded shadow-sm py-5 px-4"><img src="{% static 'images/new datas/Bonny Varghese.jpg' %}" alt="" width="138" class="img-fluid rounded mb-3 img-thumbnail shadow-sm team-img">
+      <h5 class="mb-0">Bonny Varghese</h5><span class="small text-uppercase text-muted">O&M Division Head</span>
+    </div>
+  </div>
+  <!-- End-->
+       <!-- Team item-->
+       <div class="col-xl-3 col-sm-6 mb-5 team-section">
+        <div class="bg-white rounded shadow-sm py-5 px-4"><img src="{% static 'images/new datas/Abhilashkumar.jpg' %}" alt="" width="138" class="img-fluid rounded mb-3 img-thumbnail shadow-sm team-img">
+          <h5 class="mb-0">Abhilash kumar</h5><span class="small text-uppercase text-muted">Senior Project Manager</span>
+         
+        </div>
+      </div>
+ 
+  <!-- End-->
+   
+  <div class="col-xl-3 col-sm-6 mb-5 team-section">
+    <div class="bg-white rounded shadow-sm py-5 px-4"><img src="{% static 'images/new datas/Vetrivel.jpg' %}" alt="" width="138" class="img-fluid rounded mb-3 img-thumbnail shadow-sm team-img">
+      <h5 class="mb-0">S Veeravetrivel </h5><span class="small text-uppercase text-muted"> Regional Manager-O&M</span>
+      
+    </div>
+  </div>
+   <!-- Team item-->
+   <div class="col-xl-3 col-sm-6 mb-5 team-section">
+    <div class="bg-white rounded shadow-sm py-5 px-4"><img src="{% static 'images/new datas/Nimish Thomas .jpg' %}" alt="" width="134" class="img-fluid rounded mb-3 img-thumbnail shadow-sm team-img">
+      <h5 class="mb-0">Nimish Thomas </h5><span class="small text-uppercase text-muted">Assistant Manager-O&M</span>
+      
+    </div>
+  </div>
+  <!-- End-->
+  <div class="col-xl-3 col-sm-6 mb-5 team-section">
+    <div class="bg-white rounded shadow-sm py-5 px-4"><img src="{% static 'images/new datas/CHINDHU P RAJ.jpg' %}" alt="" width="135" class="img-fluid rounded mb-3 img-thumbnail shadow-sm team-img">
+      <h5 class="mb-0">Chindhu P Raj</h5><span class="small text-uppercase text-muted"> Assistant Manager-HSE</span>
+      
+    </div>
+  </div>
+  
+  <div class="col-xl-3 col-sm-6 mb-5 team-section">
+    <div class="bg-white rounded shadow-sm py-5 px-4"><img src="{% static 'images/new datas/hrsunray.jpeg' %}" alt="" width="135" class="img-fluid rounded mb-3 img-thumbnail shadow-sm team-img">
+      <h5 class="mb-0">Ann Mary Liya</h5><span class="small text-uppercase text-muted">Asst. Manager HR</span>
+      
+    </div>
+  </div>
+
+      <!-- Team item-->
+      <div class="col-xl-3 col-sm-6 mb-5 team-section">
+        <div class="bg-white rounded shadow-sm py-5 px-4"><img src="{% static 'images/new datas/ArunDzusa.jpg' %}" alt="" width="137" class="img-fluid rounded mb-3 img-thumbnail shadow-sm team-img">
+          <h5 class="mb-0">Arun D'souza</h5><span class="small text-uppercase text-muted">Project Manager</span>
+          
+        </div>
+      </div>
+      <!-- End-->
+
+      <!-- Team item-->
+      <div class="col-xl-3 col-sm-6 mb-5 team-section">
+        <div class="bg-white rounded shadow-sm py-5 px-4"><img src="{% static 'images/new datas/brijeshkumar.jpg' %}" alt="" width="135" class="img-fluid rounded mb-3 img-thumbnail shadow-sm team-img">
+          <h5 class="mb-0 team-section">Brijesh Gautam kumar</h5><span class="small text-uppercase text-muted">Site Manager</span>
+        </div>
+      </div>
+      <!-- End-->
+    </div>
+</div>
+
+
+
+
+
+
+<!-- timeline -->
+
+
+
+
+
+
+
+<!-- another block -->
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-4">
+  <div class="container text-center">
+    <p>&copy; 2024 SunRay. All rights reserved.</p>
+    <span class="copyrights-text" style="font-size: 13px;"> Powered by:<span > <a target="_blank" rel="noopener noreferrer" style="color: #ff5e15;" href="http://dhanwis.com/">Dhanwis TechInfo Solutions</a> </span></span>
+  </div>
+</footer>
+
+<!-- JavaScript Libraries -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+<!-- Google Maps API -->
+<script>
+  function initMap() {
+    // The location of the company
+    var companyLocation = { lat: 40.7128, lng: -74.0060 };
+    // The map, centered at companyLocation
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 12,
+      center: companyLocation
+    });
+    // The marker, positioned at companyLocation
+    var marker = new google.maps.Marker({
+      position: companyLocation,
+      map: map
+    });
+  }
+</script>
+<!-- Replace YOUR_API_KEY with your Google Maps API key -->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+<script src="{% static 'js/jquery-2.2.0.min.js' %}"></script><!-- JQUERY.MIN JS -->
+<script src="{% static 'js/popper.min.js' %}"></script><!-- POPPER.MIN JS -->
+<script src="{% static 'js/bootstrap.min.js' %}"></script><!-- BOOTSTRAP.MIN JS -->
+<script src="{% static 'js/bootstrap-select.min.js' %}"></script><!-- Form js -->
+<script src="{% static 'js/magnific-popup.min.js' %}"></script><!-- MAGNIFIC-POPUP JS -->
+<script src="{% static 'js/waypoints.min.js' %}"></script><!-- WAYPOINTS JS -->
+<script src="{% static 'js/counterup.min.js' %}"></script><!-- COUNTERUP JS -->
+<script src="{% static 'js/waypoints-sticky.min.js' %}"></script><!-- STICKY HEADER -->
+<script src="{% static 'js/isotope.pkgd.min.js' %}"></script><!-- MASONRY  -->
+<script src="{% static 'js/owl.carousel.min.js' %}"></script><!-- OWL  SLIDER  -->
+<script src="{% static 'js/stellar.min.js' %}"></script><!-- PARALLAX BG IMAGE   -->
+<script src="{% static 'js/theia-sticky-sidebar.js' %}"></script><!-- STICKY SIDEBAR  -->
+<script src="{% static 'js/jquery.bootstrap-touchspin.js' %}"></script><!-- FORM JS -->
+<script src="{% static 'js/custom.js' %}"></script><!-- CUSTOM FUCTIONS  -->
+<script src="{% static 'js/lc_lightbox.lite.js' %}"></script><!-- IMAGE POPUP -->
+<script src="{% static 'js/switcher.js' %}"></script><!-- SHORTCODE FUCTIONS  -->
+
+<!-- REVOLUTION JS FILES -->
+
+<script src="{% static 'plugins/revolution/revolution/js/jquery.themepunch.tools.min.js' %}"></script>
+<script src="{% static 'plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js' %}"></script>
+
+<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->	
+<script src="{% static 'plugins/revolution/revolution/js/extensions/revolution-plugin.js' %}"></script>
+
+<!-- REVOLUTION SLIDER SCRIPT FILES -->
+<script src="{% static 'js/rev-script-11.js' %}"></script>
+</body>
+</html>
+
